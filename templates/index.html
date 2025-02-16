@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Am I?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Who Do You Look Like?</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Upload Your Photo:</label>
+                <input type="file" id="image" name="file" accept="image/*" required>
+            </div>
+            <button type="submit">Find My Lookalike</button>
+        </form>
+    </div>
+</body>
+</html>

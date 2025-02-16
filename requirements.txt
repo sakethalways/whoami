@@ -1,0 +1,6 @@
+Flask==2.3.2
+numpy==1.24.3
+opencv-python==4.7.0.72
+scikit-learn==1.2.2
+Pillow==9.5.0
+<p>Debug: File exists: {{ 'Yes' if url_for('static', filename=actor_image) else 'No' }}</p>
